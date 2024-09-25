@@ -1,5 +1,5 @@
 * {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 0;
   padding: 0;
 }
@@ -49,3 +49,14 @@ body {
   width: 100px;
 }
 
+.sidebar .tab {
+  justify-content: flex-end;
+}
+.sidebar .banner {
+  background-color: #999;
+}
+
+.sidebar .box {
+  width: 20px;
+  height: 20px;
+}
