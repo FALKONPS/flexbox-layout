@@ -9,21 +9,67 @@
   <body>
     <div class="container">
       <div class="content">
-        <div class="tab">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+        <div style="margin-bottom: 30px">
+          <div class="tab">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="banner"></div>
         </div>
-        <div class="banner"></div>
+
+        <div id="post" class="items-content">
+          <div class="item">
+            <div class="image"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+          </div>
+        </div>
       </div>
+
       <div class="sidebar">
-        <div class="tab">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+        <div style="margin-bottom: 30px">
+          <div class="tab">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="banner"></div>
         </div>
-        <div class="banner"></div>
+        <div class="bar"></div>
+        <div id="postSide" class="items-content"></div>
       </div>
     </div>
+    <script>
+      /*
+      Note: I'm using JavaScript for one purpose only—to clean up the code.
+      The code is simple; it just repeats a string multiple times and applies it to html.
+      I'm doing this because fitting empty elements manually is unreadable, at least for me ^^
+      */
+      let itemPost = `
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+          <div class="text"></div>
+        </div>
+      `;
+      document.getElementById('post').innerHTML = itemPost.repeat(10);
+
+      let itemPostSide = `
+          <div class="item">
+            <div class="image"></div>
+            <div class="text-content">
+              <div class="text"></div>
+              <div class="text"></div>
+              <div class="text"></div>
+              <div class="text"></div>
+              <div class="text"></div>
+              <div class="text"></div>
+            </div>
+          </div>
+          <div class="text"></div>
+      `;
+      document.getElementById('postSide').innerHTML = itemPostSide.repeat(2);
+    </script>
   </body>
 </html>
