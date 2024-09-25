@@ -15,11 +15,37 @@ body {
 
 .content {
   width: 60%;
-  background-color: green;
 }
 
 .sidebar {
   width: 40%;
-  background-color: red;
+}
+
+.banner {
+  background-color: #555;
+  height: 400px;
+}
+
+.tab {
+  display: flex;
+  gap: 10px;
+  height: 30px;
+}
+
+.box {
+  background-color: #999;
+  cursor: pointer;
+}
+
+.content .tab {
+  justify-content: flex-start;
+}
+
+.content .tab .box:first-child {
+  background-color: #555;
+}
+
+.content .box {
+  width: 100px;
 }
 
