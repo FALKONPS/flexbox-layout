@@ -64,3 +64,66 @@ body {
   width: 20px;
   height: 20px;
 }
+
+.items-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.content .items-content .item {
+  /*
+   Dynamic sizing for 5 elements to fit the parent container...
+   Using 100% / 5 = 20% for each element
+   The value 16 is an adjustment through trial and error to fit the box properly ;)
+   */
+  width: calc(20% - 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content .items-content .image {
+  background-color: #ccc;
+  aspect-ratio: 1;
+}
+
+.content .items-content .text {
+  height: 8px;
+  background-color: #e0e0e0;
+  margin-bottom: 2px;
+}
+
+.sidebar .items-content {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar .item {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar .image {
+  background-color: #ccc;
+  height: 120px;
+  width: 120px;
+}
+
+.sidebar .text-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar .text {
+  height: 8px;
+  background-color: #e0e0e0;
+}
+
+.sidebar .bar {
+  height: 20px;
+  background-color: #999;
+  margin-bottom: 10px;
+}
